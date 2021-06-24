@@ -155,7 +155,7 @@ nav {
   margin-top: 23px;
 }
 
-.promo .promo_btn {
+.promo_btn {
   display: block;
   margin: 118px auto 0 auto;
   width: 259px;
@@ -173,7 +173,7 @@ nav {
   text-transform: uppercase;
 }
 
-.promo .promo_btn:hover {
+.promo_btn:hover {
   background-image: none;
   background-color: #1eacc7;
 }
@@ -647,6 +647,10 @@ nav {
   color: #ff5656;
 }
 
+.xs-visible {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .menu_item {
     padding-right: 19px;
@@ -863,6 +867,7 @@ nav {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     width: 30px;
+    height: 20px;
   }
   .burger span {
     display: block;
@@ -877,15 +882,115 @@ nav {
     margin-bottom: -2px;
   }
   .burger_active span:nth-child(1) {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    -webkit-transform: translateY(3px) rotate(-45deg);
+            transform: translateY(3px) rotate(-45deg);
   }
   .burger_active span:nth-child(2) {
     display: none;
   }
   .burger_active span:nth-child(3) {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -webkit-transform: translateY(3px) rotate(45deg);
+            transform: translateY(3px) rotate(45deg);
+  }
+  .xs-hidden {
+    display: none;
+  }
+  .xs-visible {
+    display: block;
+  }
+  .subheader_phone {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .subheader_btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+  }
+  .promo_header {
+    font-size: 35px;
+  }
+  .promo_subheader {
+    font-size: 23px;
+  }
+  .choice {
+    min-height: 780px;
+  }
+  .footer-block {
+    width: 60%;
+  }
+}
+
+@media (max-width: 575px) {
+  header {
+    height: 30px;
+  }
+  nav {
+    height: 30px;
+  }
+  .burger {
+    width: 20px;
+    height: 10px;
+  }
+  .burger span {
+    height: 1px;
+    margin-bottom: 3px;
+  }
+  .menu {
+    width: 85%;
+  }
+  .subheader {
+    height: 60px;
+    top: 30px;
+  }
+  .subheader_official {
+    display: none;
+  }
+  .subheader_logo {
+    margin-top: 16px;
+  }
+  .subheader_phone {
+    margin-top: 9px;
+    margin-right: -8px;
+    font-size: 12px;
+  }
+  .subheader_btn {
+    width: 110px;
+    height: 22px;
+    font-size: 10px;
+    margin-top: 8px;
+    margin-right: 6px;
+  }
+  .promo {
+    min-height: 400px;
+    padding: 105px 0 35px 0;
+  }
+  .promo_header {
+    font-size: 30px;
+    padding: 0 22px;
+    line-height: 35px;
+  }
+  .promo_subheader {
+    font-size: 20px;
+    padding: 0 10px;
+    line-height: 25px;
+    margin-top: 23px;
+  }
+  .promo_descr {
+    display: none;
+  }
+  .promo_btn {
+    width: 210px;
+    height: 50px;
+    font-size: 16px;
+    margin-top: 66px;
+  }
+  .footer_line {
+    width: 254px;
   }
 }
 /*# sourceMappingURL=style.css.map */
